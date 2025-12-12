@@ -1,12 +1,64 @@
-# Hackathon-Eleven-Strategy
+<h1 align="center">Hackathon Eleven Strategy — Theme Park Waiting Time Prediction</h1>
 
-M1 Introduction week Hackathon, provided by Eleven Strategy - Using machine learning to predict waiting time at t+2h for three attractions in a theme park. 
+<p align="center">
+  <em>
+    Machine learning models to predict attraction waiting times at t+2h during an academic hackathon.
+  </em>
+</p>
 
-Data is processed within a [Feature engineering](feature_engineering.py) function. We then had a first attempt at a [linear model](theme_park_linear.py) with a RMSE stalling at 9.54. Our final model was powered by [XGBoost](theme_park_xgb.py) lowered the RMSE to 8.81.
+<p align="center">
+  <img width="650" alt="Theme Park Waiting Time Prediction" src="https://github.com/user-attachments/assets/f65309af-9270-4ffc-bf0e-1f6800c93685" />
+</p>
 
-Submission in the form of a csv file : DATETIME . ENTITY_DESCRIPTION_SHORT . y_pred . KEY
+---
+
+## Overview
+
+This project was developed during the **M1 Introduction Week Hackathon**, organized by
+**Eleven Strategy**.
+
+The objective was to use historical data to **predict waiting times two hours ahead (t+2h)**
+for three attractions in a theme park, using supervised machine learning techniques.
+
+---
+
+## Methodology
+
+### Feature Engineering
+
+- Raw data preprocessing and feature construction implemented in  
+  [`feature_engineering.py`](feature_engineering.py)
+
+---
+
+### Models
+
+Two approaches were explored:
+
+- **Linear Regression**
+  - Implemented in [`theme_park_linear.py`](theme_park_linear.py)
+  - Achieved an RMSE of **9.54**
+
+- **XGBoost Regressor**
+  - Implemented in [`theme_park_xgb.py`](theme_park_xgb.py)
+  - Improved performance with an RMSE of **8.81**
+
+---
+
+## Submission Format
+
+Predictions were submitted as a CSV file with the following structure:
+
+DATETIME | ENTITY_DESCRIPTION_SHORT | y_pred | KEY
 
 
-<img width="650" height="365" alt="Screenshot 2025-09-12 at 11 05 10" src="https://github.com/user-attachments/assets/f65309af-9270-4ffc-bf0e-1f6800c93685" />
+---
 
+## Context
 
+This project focuses on:
+- Feature engineering
+- Model comparison
+- Regression performance optimization under time constraints
+
+It was completed in a **hackathon setting**, emphasizing rapid experimentation and iteration.
